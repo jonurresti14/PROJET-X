@@ -1,0 +1,17 @@
+{
+  "name": "hello-node",
+  "version": "1.0.0",
+  "description": "A simple Node app with static file serving",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "license": "MIT"
+}

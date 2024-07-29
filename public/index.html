@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe con autenticación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <iframe id="content-frame" src=""></iframe>
+
+    <div id="password-panel" class="hidden">
+        <button class="close-button" onclick="closePanel('password-panel')">&times;</button>
+        <h2>Ingrese contraseña</h2>
+        <input type="password" id="password-input" placeholder="Contraseña">
+        <input type="text" id="username-input" placeholder="Nombre de usuario">
+        <button onclick="verifyPassword()">Verificar</button>
+    </div>
+
+    <div id="url-panel" class="hidden">
+        <button class="close-button" onclick="closePanel('url-panel')">&times;</button>
+        <h2>Cambiar URL del iframe</h2>
+        <input type="text" id="url-input" placeholder="Nueva URL">
+        <button onclick="changeIframeUrl()">Cambiar</button>
+        <h2>Notas</h2>
+        <textarea id="notes-input" placeholder="Escribe tus notas aquí..."></textarea>
+        <button onclick="saveNotes()">Guardar Notas</button>
+        <h2>Gestión de usuarios</h2>
+        <div id="user-management"></div>
+        <button onclick="loadUsers()">Cargar usuarios</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
